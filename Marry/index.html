@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+<title>画饼</title>
+<style>
+	.b{
+    -webkit-animation:rotateImg 3s linear infinite;
+    width: 50% ;
+    height: 50%;
+    vertical-align: middle;
+}
+	@keyframes rotateImg {
+  0% {transform : rotate(0deg);}
+  100% {transform : rotate(360deg);}
+}
+
+@-webkit-keyframes rotateImg {
+    0%{-webkit-transform : rotate(0deg);}
+  100%{-webkit-transform : rotate(360deg);}
+}
+	</style>
+</head>
+
+<body>
+<div style="width: 100em;height: 100em; margin: 0 auto;">
+<img class="b" src="1.png">
+</div>
+</body>
+</html>
