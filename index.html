@@ -34,7 +34,7 @@ div { margin: 0; padding: 0; border: 0; }
 </style>
 	</head>
 	<body marginwidth="0" marginheight="0">
-	<div style="width: 100px;height: 100px; margin-left: auto;margin-right: auto;" >
+	<div>
 	<canvas id="c" height="356" width="446">
 	</div>
 <script>
@@ -43,13 +43,13 @@ div { margin: 0; padding: 0; border: 0; }
 				var fs = top.document.getElementsByTagName('frameset')[0];
 				var f = fs.getElementsByTagName('frame');
 				if (collapsed) {
-					fs.rows = '250px,*';
+					fs.rows = '250em,*';
 					// enable resizing of frames in firefox/opera
 					fs.noResize = false;
 					f[0].noResize = false;
 					f[1].noResize = false;
 				} else {
-					fs.rows = '30px,*';
+					fs.rows = '30em,*';
 					// disable resizing of frames in firefox/opera
 					fs.noResize = true;
 					f[0].noResize = true;
